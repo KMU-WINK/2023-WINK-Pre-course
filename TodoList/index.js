@@ -1,23 +1,5 @@
 window.onload = () => {
-  let week = [
-    "일요일",
-    "월요일",
-    "화요일",
-    "수요일",
-    "목요일",
-    "금요일",
-    "토요일",
-  ];
-  let today = new Date();
-
-  let year = today.getFullYear();
-  let month = today.getMonth() + 1;
-  let day = today.getDate();
-  let dayName = week[today.getDay()];
-
-  document.querySelector(".date").innerText = `${year}년 ${month}월 ${day}일`;
-  document.querySelector(".day").innerText = dayName;
-
+  document.querySelector(".date").innerText = new Date().toLocaleDateString();
   reloadCount();
 };
 
