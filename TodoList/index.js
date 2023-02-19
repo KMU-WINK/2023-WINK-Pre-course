@@ -15,8 +15,8 @@ window.onload = () => {
   let day = today.getDate();
   let dayName = week[today.getDay()];
 
-  document.querySelector(".date").append(`${year}년 ${month}월 ${day}일`);
-  document.querySelector(".day").append(dayName);
+  document.querySelector(".date").innerText = `${year}년 ${month}월 ${day}일`;
+  document.querySelector(".day").innerText = dayName;
 
   reloadCount();
 };
