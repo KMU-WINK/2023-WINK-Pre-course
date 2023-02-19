@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram</title>
+    <link rel="stylesheet" href="login.css" />
+    <script type="text/javascript" src="login.js"></script>
+  </head>
+  <body>
+    <div class="login-wrapper">
+      <img src="image/logo.png" class="logo" />
+      <input
+        type="text"
+        class="input"
+        placeholder="전화번호, 사용자 이름 또는 이메일"
+        onchange="handleInput(event)"
+      />
+      <input
+        type="password"
+        class="input"
+        placeholder="비밀번호"
+        onchange="handleInput(event)"
+      />
+      <button class="button" id="login-button">로그인</button>
+      <hr />
+      <a href="https://facebook.com"><img src="image/facebook.png" /></a>
+      <a
+        href="https://www.instagram.com/accounts/password/reset/"
+        class="lost-password"
+        >비밀번호를 잊으셨나요?</a
+      >
+    </div>
+    <div class="signup-wrapper">
+      계정이 없으신가요? <a href="signup.html" class="signup">가입하기</a>
+    </div>
+    <span class="app-download-span">앱을 다운로드하세요.</span>
+    <div class="app-wrapper">
+      <img src="image/app-store.png" />
+      <img src="image/google-play.png" />
+    </div>
+    <div class="footer">
+      <a href="#" class="link">Meta</a>
+      <a href="#" class="link">소개</a>
+      <a href="#" class="link">블로그</a>
+      <a href="#" class="link">채용정보</a>
+      <a href="#" class="link">도움말</a>
+      <a href="#" class="link">API</a>
+      <a href="#" class="link">개인정보처리방침</a>
+      <a href="#" class="link">약관</a>
+      <a href="#" class="link">인기 계정</a>
+      <a href="#" class="link">위치</a>
+      <a href="#" class="link">Instagram</a>
+      <a href="#" class="link">연락처 업로드 & 비사용자</a>
+    </div>
+  </body>
+</html>
