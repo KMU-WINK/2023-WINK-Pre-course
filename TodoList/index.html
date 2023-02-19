@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +9,13 @@
     <link rel="stylesheet" type="text/css" href="index.css">
     <script src="index.js"></script>
 </head>
+
 <body>
     <div class="todo-container">
         <header class="todo-header">
-            <h1>2023년 1월 21일</h2>
-            <h2 class="day">화요일</h3>
-            <h3>할 일 N개 남음</h3>
+            <h1 class="date"></h1>
+            <h2 class="day"></h2>
+            <h3>할 일 <span class="count"></span>개 남음</h3>
         </header>
         <div class="todo-content">
             <div class="todo-item">
@@ -28,9 +30,10 @@
             </div>
         </div>
         <footer>
-            <input id="textbox" type="text" placeholder="할 일을 입력해주세요."/>
+            <input id="textbox" type="text" placeholder="할 일을 입력해주세요." />
             <input type="button" value="+" onclick="addTodo()">
         </footer>
     </div>
 </body>
+
 </html>
