@@ -1,8 +1,3 @@
-window.onload = () => {
-  document.querySelector(".date").innerText = new Date().toLocaleDateString();
-  reloadCount();
-};
-
 const reloadCount = () => {
   let count = document.querySelectorAll(".todo-item:not(.done)").length;
   document.querySelector(".count").innerText = count;
@@ -43,3 +38,6 @@ const todoDone = (el) => {
   el.parentElement.classList.toggle("done");
   reloadCount();
 };
+
+document.querySelector(".date").innerText = new Date().toLocaleDateString();
+reloadCount();
