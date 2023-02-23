@@ -12,12 +12,12 @@
 <body>
     <div class="todo-container">
         <header class="todo-header">
-            <h1 class="date">2023년 1월 21일</h1>
-            <h3>할 일 <span class="count"></span>개 남음</h3>
+            <h1 class="date">2023. 2. 21.</h1>
+            <h3>할 일 <span class="count">0</span>개 남음</h3>
         </header>
         <div class="todo-content">
-            <div class="todo-item">
-                <input type="checkbox" onclick="todoDone(this)" />
+            <div class="todo-item done">
+                <input type="checkbox" onclick="todoDone(this)" checked />
                 아침 산책
                 <input type="button" onclick="delTodo(this)" value="❌" />
             </div>
@@ -32,7 +32,7 @@
             <input type="button" value="+" onclick="addTodo()">
         </footer>
     </div>
-    <script src="index.js"></script>
+    <!-- <script src="index.js"></script> -->
 </body>
 
 </html>

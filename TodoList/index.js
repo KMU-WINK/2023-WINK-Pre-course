@@ -1,6 +1,19 @@
+document.querySelector(".date").innerText = new Date().toLocaleDateString();
+
 const reloadCount = () => {
   let count = document.querySelectorAll(".todo-item:not(.done)").length;
   document.querySelector(".count").innerText = count;
+};
+reloadCount();
+
+const delTodo = (el) => {
+  el.parentElement.remove();
+  reloadCount();
+};
+
+const todoDone = (el) => {
+  el.parentElement.classList.toggle("done");
+  reloadCount();
 };
 
 const addTodo = () => {
@@ -28,16 +41,3 @@ const addTodo = () => {
     reloadCount();
   }
 };
-
-const delTodo = (el) => {
-  el.parentElement.remove();
-  reloadCount();
-};
-
-const todoDone = (el) => {
-  el.parentElement.classList.toggle("done");
-  reloadCount();
-};
-
-document.querySelector(".date").innerText = new Date().toLocaleDateString();
-reloadCount();
